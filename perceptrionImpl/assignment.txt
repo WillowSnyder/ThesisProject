@@ -1,0 +1,43 @@
+orry to have missed you. Here are some pointers on what to look at next:
+
+First, make a list of the things (concepts) of the Perceptron Learning 
+Algorithm (both implementation and analysis) that are clear to you, and those 
+that are not clear. Write them all down in a list. For those that are not 
+clear, try to be specific about where the ambiguity or confusion lies.
+
+Next, try to get clarity on those things which are not clear by re-reading some 
+of the previous papers we've looked at. Make notes.
+
+Next, have a look at the following papers / lecture notes:
+     - https://na01.safelinks.protection.outlook.com/?url=https:%2F%2Fwww.cs.cmu.edu%2F~avrim%2FML10%2Flect0125.pdf&data=01%7C01%7CWyatt_Snyder%40baylor.edu%7C42bb9ffd4e014d6c78e608d5c8b21e61%7C22d2fb35256a459bbcf4dc23d42dc0a4%7C1&sdata=zMBeEyzh2Ioyo7YqKQzOn%2F3B2BD%2BKhPbqO7x%2BcOUw1I%3D&reserved=0 -- in particular, the
+       part about approximately maximizing the margin.
+
+     - https://na01.safelinks.protection.outlook.com/?url=https:%2F%2Fwww.cs.huji.ac.il%2F~shais%2Fpapers%2FShalevSi05.pdf&data=01%7C01%7CWyatt_Snyder%40baylor.edu%7C42bb9ffd4e014d6c78e608d5c8b21e61%7C22d2fb35256a459bbcf4dc23d42dc0a4%7C1&sdata=fjX8djk51Ony4tlUci1u2AhBpU2nzyfBWEVG2nnFRgk%3D&reserved=0 -- an adaptation
+       of the PLA that makes corrections to the hyperplane even when a point is
+       correctly classified, if the point is "too close" to the current
+       hyperplane.
+
+     - Once you have digested these, try to implement them (on top of your
+       existing code, as alternative algorithms).
+
+Next, I would like you to set up a simple experiment which does the following:
+- write a program that can *generate* a linearly-separable dataset in d
+   dimensions with margin \gamma (where d and \gamma are given by the user)
+- estimate based on PLA theory the expected number of mistakes (or updates, in
+   the case of the "ballseptron" algorithm) made by the learning algorithm
+- run PLA (or ballseptron) using a random strategy to pick the next point, and
+   measure how many mistakes (updates) it makes (do this multiple times to get
+   an average and variance)
+- compare the theoretical and experimental results, in terms of the number of
+   iterations required, for different d and different \gamma
+- also examine the margin of the learned hyperplane in the experimental results
+
+Next, think about ways that you could develop a better algorithm (better than 
+choosing points using a uniform random distribution) for choosing the next 
+example. Here "better" can mean both "requiring fewer iterations" and 
+"resulting in a better margin". I'm sure you can find some papers published 
+about this; I have not looked yet.
+
+Best,
+- greg
+

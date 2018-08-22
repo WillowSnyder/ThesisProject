@@ -1,0 +1,4 @@
+/home/wyatt/Programs/clion-2017.3.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/wyatt/Documents/School/currentClasses/CSF/CSF3101-3102/perceptrionImpl
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wyatt/Documents/School/currentClasses/CSF/CSF3101-3102/perceptrionImpl/cmake-build-debug

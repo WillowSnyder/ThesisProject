@@ -1,0 +1,3 @@
+gamma needed for margin perceptron algorithm? what is gamma isn't known?
+Do all the inputs need to be normalized to euclidean length 1 or can it work without normalization?
+

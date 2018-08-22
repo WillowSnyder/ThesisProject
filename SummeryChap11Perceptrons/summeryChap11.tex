@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{titling}
+\usepackage{fancyhdr}
+
+\author{Wyatt Snyder}
+\title{Summary of Chapter 11 of "Perceptrons An Introduction to Computational Geometry" by Marvin Minsky and Seymour Papert} 
+\pagestyle{fancy}
+
+%\fancyhf{}
+%\lhead{\theauthor}
+%\rhead{\thetitle}
+
+\begin{document}
+	\maketitle
+	\pagenumbering{gobble}
+	Chapter 11 starts off describing a learning machine and giving an example.
+	Continuing in this manner it describes two different ways to create a learning machine. 
+	The first way being creating a memory machine that remembers everything
+	it was given, thus making it perfect on what it has seen before, the other way
+	is to create a machine that detects patterns with a description. A perceptron is a
+	different type of machine that lies between these two types.
+	
+	The perceptron being a vector in the data space, takes a figure X, with coefficients 
+	representing where the data value is inthe data space, and then after summing the 
+	coefficients of the perceptron multiplied by the values of the figure given, if this 
+	result is positive and $X\in F^+$, where $F^+$ is the set of values in the positive subset,
+	then all is well, otherwise the coefficients of the perceptron that are not zero should be 
+	changed so that the value better predicts the figure.
+	
+	The book then continues to describe the perceptron convergence theorem, where you choose
+	any value for A, the vector to represent the perceptron, and then choose any value, X, from
+	either of the data sets and if the sum is positive and $X\in F^+$ or the sum is negative and
+	$X\in F^-$ then continue, if not then replace A
+	with $A\pm X$ to correct the sum. Then claims that the function will correct the
+	vector A only a finite amount of times.
+	
+	Next the book refines the convergence theorem and then goes on to prove it. The proof
+	starts by first defining a function $G(A)=\frac{A^* \cdot A}{|A|}$, where $A^*$ is the
+	solution vector such that there exists a $\delta > 0$ such that $A^* \cdot X > \delta$, 
+	and then shows how the numerator of G grows linearly with n, where n is the number of passes
+	and then shows how the denominator grows slower
+	than linear with respect to n. Then using the fact that G(A) is the cosine of the angle between $A^*$ and A,
+	thus it has to be in between 1 and -1, the book shows that the function can only iterate a finite 
+	amount of time.
+	
+	Continuing the book creates a geometric proof for the convergence theorem. The proof shows
+	how normally the vector A will come closer to the solution vector $A^*$, with the special
+	case of how it could "over shoot" going past the solution vector. But because
+	$A^* \cdot X > \delta$, as the cone of the area gets larger eventually the area the vector A
+	can land gets smaller than the area that would make it closer than it was, thus it will 
+	eventually stop changing.
+	
+	The book quickly notes that the convergence theorem has a large number of variations.
+	These variations are created by modifying either the set F or how the vector is changed
+	during the ADD part of the algorithm. A major variation is to allow more than two classes
+	of input figures, thus generalizing the theorem.
+	
+	Additionally the book compares the perceptron convergence theorem to the hill climbing
+	problem. This can be done by defining G(A) as in the proof as to be the surface. It 
+	differs from the usual hill climbing problem with how there is no systematic way to
+	explore the effects of going in every direction from the current position of the
+	perceptron, and how it never has the value of the function G(A) because by definition
+	$A^*$ is unknown.
+	
+	
+	 
+	
+\end{document}
+
+
+

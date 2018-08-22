@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/perceptrionImpl.dir/main.cpp.o CMakeFiles/perceptrionImpl.dir/perceptronFunctions.cpp.o  -o perceptrionImpl 
