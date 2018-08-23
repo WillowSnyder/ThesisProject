@@ -9,18 +9,35 @@
 	For my thesis I will be pursuing a machine-learning centric solution that may be used to identify melodies in musical performances. Varying features of the performance will be taken into consideration with different levels of importance. The musical performance will be of only the melody with no harmonies played with it. My research will begin by analyzing the strengths and weaknesses of different machine learning models so that I may choose an appropriate model for this thesis project. 
 	
 	\section{Data}
-	The data used for this research is going to be primarily midi files of melodies either pre-existing or created during the course of the research. Additional data samples that may be used include live recordings of a melody being sung or played.
+	The data used for this research is going to be primarily midi files of melodies either pre-existing or created during the course of the research. The use of midi files is primarly because they are already encoded so they are eaiser to input into the learning model. Additional data samples that may be used include live recordings of a melody being sung or played.
 	
 	\section{Features}
-	The primary feature used for training the model will be the intervals between notes played in the midi file. Additionally, the rhythm will be a primary feature used as it plays a major role in melody identification. Tempo will be another feature taken into consideration, but will be held with lesser importance as tempos can fluctuate in a melody and be performed at all different speeds. Absolute pitch will play a minor role as melodies are considered to be the "same" melody regardless of what musical key or octave they are played in.  
+	All machine learning models require some sort of fetures present in the data for them to work properly so they are not just looking at raw data. Because of this the following features are ones that are being planned to be used during this thesis:
+	\begin{itemize}
+		\item Intervals between notes: The intervals between notes is the primary feature in this thesis because it is believed that the intervals are the primary factor that determines a musical melody line.
+		
+		\item Rhythm: The rhythm of the notes in the melody is another primary way melodies are identified thus making it another primary feature for the learning model
+		
+		\item Tempo: Although tempos can fluctuate throughout a melody and the same melody can be played at varying tempos and is still considered the same melody, it is still an important feature but will hold lesser importance.
+		
+		\item Pitch: The absolute pitch the melody is performed would hold a similar importance that tempo does. Although melodies are normally performed in the same musical key and octave it remains the same melody.
+	\end{itemize} 
 	
 	\section{Learning Model}
-	The learning model that will be used for this research project is currently unknown. The most promising choices for a learning model include the perceptron and the Hidden Markov Model.
+	The learning model that will be used for this research project is currently unknown. The most promising choices for a learning model include the perceptron and the Hidden Markov Model. The Hidden Markov Model is one of the first choices for the learning model because of its use in musical applications so far.
 	
 	\section{Key Questions}
 	Key questions that will be explored during my research will include the following. How many notes are necessary to identify the song? What if there are mistakes in the performance of the melody? What if there isn't an close match for any melodies in that database?
 	
-	\section{Works Cited}
+	\section{References}
 	Cuddy, Lola L., Annabel J. Cohen, and Janet Miller. "Melody Recognition: The Experimental Application of Musical Rules." Canadian Journal of Psychology, vol. 33, 1979, pp. 148. ProQuest, http://ezproxy.baylor.edu/login?url=https://search.proquest.com/docview/1289971631?accountid=7014.
+	\newline
+	
+	\noindent
+	“EN.MIDIMELODY.RU.” En.midimelody.ru, en.midimelody.ru/.
+	\newline
+	
+	\noindent
+	Johnson, Peter. “Musical Works, Musical Performances.” The Musical Times, vol. 138, no. 1854, 1997, p. 4., doi:10.2307/1003750.
 	
 \end{document}
