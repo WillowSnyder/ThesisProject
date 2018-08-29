@@ -1,0 +1,12 @@
+machine recognition of music emotion: printed in ACM Transactions on Intelligent Systems and Technology May 2012
+Cited by 191
+
+Classification of musical genre: A machine learning apporach: printed in ISMIR 2004, 
+Cited by 77
+
+Automatic Identification of Music Works
+through Audio Matching
+Cited by 13....
+
+Folk Music Classification Using hidden markov models
+cited by 191
