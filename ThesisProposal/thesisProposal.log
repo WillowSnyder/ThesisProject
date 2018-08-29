@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.24)  25 AUG 2018 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.24)  29 AUG 2018 08:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -53,9 +53,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (260.64037pt too wide) in paragraph at lines 33--35
+Overfull \hbox (0.19531pt too wide) in paragraph at lines 33--35
 \OT1/cmr/m/n/10 vol. 33, 1979, pp. 148. Pro-Quest, http://ezproxy.baylor.edu/lo
-gin?url=https://search.proquest.com/docview/1289971631?accountid=7014. 
+gin?url=https:// 
  []
 
 
@@ -94,7 +94,7 @@ msfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesisProposal.pdf (2 pages, 67165 bytes).
+Output written on thesisProposal.pdf (2 pages, 67136 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
