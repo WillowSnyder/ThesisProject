@@ -1,11 +1,49 @@
 \documentclass{article}
 
 \begin{document}
+	\section{Summary of articles}
+	\subsection{Folk Music Classification}
+	
+	Chai begins by explaining how it would be useful for computers to be able to classify 
+	musical works, and by doing so we could learn how a human can identify a musical work quickly. They then explain the goals of their research being ": (1) to explore whether there exists
+	significant statistical difference among folk music
+	from different countries based on their melodies;
+	(2) to compare the classification performances
+	using different melody representations; (3) to
+	study how HMM’s perform for music
+	classification as a time series analysis problem."
+
+	
+	They used German and Irish folk music pieces for their data. They chose folk songs because of their clear monophonic melody line. They chose German and Irish because 
+	of the availability of data.
+	
+	For the representation of the melody line they used four different methods.
+	\begin{itemize}
+		\item Absolute Pitch: where they have a value for each note in an octave. 
+		\item Absolute Pitch with Duration Representation: Same as absolute pitch but each note is repeated relative to the length of the smallest rhythmical note.
+		\item Interval Representation: The melody is converted to a sequence of intervals. 
+		\item Contour Representation: The melody is converted to a sequence of contours, instead of using intervals it just states +/- for small change and ++/-- for large change in the melody.
+	\end{itemize}
+	
+	They used 16 different Hidden Markov Models to test how varying structures and number of states for the HMM's performed in the melody classification. For the HMM's they used the Baum-Welch reestimation method for training the markov model for each country. For the identification they used the Viterbi algorithm to decode the sequence and compute its log probabilities. 
+	
+	The data was split 70\%/30\% training/testing. After training the HMM's the best representation achieved 63\%-77\% correctness in identifying the origin of the folk melody. 
+	
+	The results they concluded include that different melodic origins can have varying degrees of similarity making it more difficult to differentiate them. Additionally they discovered that although absolute pitch is a more objective way to represent the melodic line, interval representation performed better, which is consistent with how humans perceive melody lines.
+	
+	Finally they conclude with stating how HMM's can be used for melody classification for folk music and how folk music does have significant statistical difference between countries of origin. Ending with stating that melody is an important feature but calssification can be greatly improved if other significant features (harmony, instrumentation, performance style etc.) are included in the features used.
+	 
 	\section{References}
  	Müllensiefen, Daniel, and Klaus Frieler. “Evaluating Different Approaches to Measuring the Similarity of Melodies.” Studies in Classification, Data Analysis, and Knowledge Organization Data Science and Classification, pp. 299–306., doi:10.1007/3-540-34416-0\_32.
 	\newline
 	
 	\noindent
 	Aloupis, Greg, et al. “Algorithms for Computing Geometric Measures of Melodic Similarity.” Computer Music Journal, vol. 30, no. 3, 2006, pp. 67–76., doi:10.1162/comj.2006.30.3.67.
+	\\
+	
+	\noindent
+	Chai, Wei, and Barry Vercoe. "Folk music classification using hidden Markov models." Proceedings of international conference on artificial intelligence. Vol. 6. No. 6.4. sn, 2001.
+	
+	
 	
 \end{document}
