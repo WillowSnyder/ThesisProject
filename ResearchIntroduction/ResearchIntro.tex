@@ -25,13 +25,13 @@
 		\item Contour Representation: The melody is converted to a sequence of contours, instead of using intervals it just states +/- for small change and ++/-- for large change in the melody.
 	\end{itemize}
 	
-	They used 16 different Hidden Markov Models to test how varying structures and number of states for the HMM's performed in the melody classification. For the HMM's they used the Baum-Welch reestimation method for training the markov model for each country. For the identification they used the Viterbi algorithm to decode the sequence and compute its log probabilities. 
+	They used 16 different Hidden Markov Models to test how varying structures and number of states for the HMM's performed in the melody classification. For the HMM's they used the Baum-Welch re-estimation method for training the markov model for each country. For the identification they used the Viterbi algorithm to decode the sequence and compute its log probabilities. 
 	
 	The data was split 70\%/30\% training/testing. After training the HMM's the best representation achieved 63\%-77\% correctness in identifying the origin of the folk melody. 
 	
 	The results they concluded include that different melodic origins can have varying degrees of similarity making it more difficult to differentiate them. Additionally they discovered that although absolute pitch is a more objective way to represent the melodic line, interval representation performed better, which is consistent with how humans perceive melody lines.
 	
-	Finally they conclude with stating how HMM's can be used for melody classification for folk music and how folk music does have significant statistical difference between countries of origin. Ending with stating that melody is an important feature but calssification can be greatly improved if other significant features (harmony, instrumentation, performance style etc.) are included in the features used.
+	Finally they conclude with stating how HMM's can be used for melody classification for folk music and how folk music does have significant statistical difference between countries of origin. Ending with stating that melody is an important feature but classification can be greatly improved if other significant features (harmony, instrumentation, performance style etc.) are included in the features used.
 	 
 	\subsection{Classification of Musical Genre: A Machine Learning Approach}
 	This paper starts by describing musical genre and how it exists as a terms that define recurrences and similarities between two works of music that the community uses to identify musical events. Thus their analysis is focused on symbolic musical aspects to gain as much information about the dynamic genres, without additional noise. They used six different musical genres with 300 midi songs.
@@ -40,7 +40,7 @@
 	\begin{itemize}
 		\item Melodic Intervals
 		\item Instruments
-		\item Instrument Classes and Drumkits
+		\item Instrument Classes and Drum-kits
 		\item Meter/Time Changes
 		\item Note Extension
 	\end{itemize}
@@ -54,18 +54,42 @@
 		\item NNge
 		\item RIPPER
 	\end{itemize}
+
+	They separated the data into training and testing portions with three different proportions of training data 90\%, 75\%, and 66\%. They found that for multi-class categorization the Bayesian classifier performed the best, additionally that classical music is the easiest for their algorithms to recognize followed by Jazz. The binary classifiers outperformed the multi-class in accuracy. 
+	
+	The paper ends with stating that simple musical features can provide enough information to successfully categorize a first level of musical genre but classification of closer genres such as Jazz and Blues would require more complex features. 
+	
+	\subsection{Melody Recognition: The Experimental Application of Musical Rules}
+	Cuddy's paper begins by explaining how melodies are recognized even when transposed to different keys despite the fact that the absolute pitches are altered. It then goes on to speculate on the importance of diatonicism, the tones of the diatonic scale, and cadence, a particular order of tones at the end of a melody. The paper then went on to discuss testing of transposed melodies, melodies with errors that fell inside the diatonic scale and errors that fell outside the diatonic scale, in addition to testing melodies in the context of a cadence. Their results showed that when the error in the melody included a non-diatonic tone performance deteriorated, but when inside a diatonic and cadence context performance improved. 
+	
+	\subsection{Automatic Identification of Music Works through Audio Matching}
+	This paper begins by explaining a need for automated identification of musical works, then goes on to explain different current types of identification, namely, audio fingerprint, and audio watermarking. It then goes on to begin it's discussion on its main work of music identification using audio matching. There research utilizes Hidden Markov Models, and aims to be able to identify live performances of musical works with diverse instrumentation.
+	
+	Their approach is based on an \textit{audio to audio} matching process, retrieving all the audio recordings from a database that in some sense represent the same musical content of the query. This is done with the idea that two different performances of the same musical work, even though they could differ greatly, can be generalized to model the features of other performances of the same musical work.
+	
+	With the goal of analyzing a performance to create a statistical model of the score, they followed the following steps:
+	\begin{enumerate}
+		\item Segmentation: Extraction of audio sub sequences with a coherent acoustic content
+		\item Parameter Extraction: Analyzing of the segments to compute a set of acoustic parameters general enough to be matched varying performances of the same musical work
+		\item Modeling: Automatically building a HMM from the segmentation and parameter extraction to model music production as a stochastic process.
+	\end{enumerate}
+	Finally at matching time an unknown recording of a performance is preprocessed to extract the features modeled by the HMMs, and then all the models are ranked based on their probability of creating the same features of the unknown performance.
 	
 	\section{References}
  	Müllensiefen, Daniel, and Klaus Frieler. “Evaluating Different Approaches to Measuring the Similarity of Melodies.” Studies in Classification, Data Analysis, and Knowledge Organization Data Science and Classification, pp. 299–306., doi:10.1007/3-540-34416-0\_32.
-	\newline
-	
-	\noindent
-	Aloupis, Greg, et al. “Algorithms for Computing Geometric Measures of Melodic Similarity.” Computer Music Journal, vol. 30, no. 3, 2006, pp. 67–76., doi:10.1162/comj.2006.30.3.67.
-	\\
-	
-	\noindent
+	\\ \\
+	Aloupis, Greg, et al. “Algorithms for Computing Geometric Measures of Melodic Similarity.” Computer Music Journal, vol. 30, no. 3, 2006, pp. 67–76., \\doi:10.1162/comj.2006.30.3.67.
+	\\ \\
 	Chai, Wei, and Barry Vercoe. "Folk music classification using hidden Markov models." Proceedings of international conference on artificial intelligence. Vol. 6. No. 6.4. sn, 2001.
-	
-	
+	\\ \\
+	Basili, Roberto, Alfredo Serafini, and Armando Stellato. "Classification of musical genre: a machine learning approach." ISMIR. 2004.
+	\\ \\
+	Cuddy, Lola L., Annabel J. Cohen, and Janet Miller. "Melody recognition: The experimental application of musical rules." Canadian Journal of Experimental Psychology 33 (1979): 148.
+	\\ \\
+	Miotto, Riccardo, and Nicola Orio. "Automatic identification of music works through audio matching." International Conference on Theory and Practice of Digital Libraries. Springer, Berlin, Heidelberg, 2007.
+	\\
+	LOOK INTO THIS----------------------------------------------------------------------\\
+	https://www.cs.cornell.edu/zeno/Papers/humming/humming.html\\
+	-----------------------------------------------------------------------
 	
 \end{document}
