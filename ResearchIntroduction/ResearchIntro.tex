@@ -75,6 +75,21 @@
 	\end{enumerate}
 	Finally at matching time an unknown recording of a performance is preprocessed to extract the features modeled by the HMMs, and then all the models are ranked based on their probability of creating the same features of the unknown performance.
 	
+	\subsection{Query By Humming -- Musical Information Retrieval in an Audio Database}
+	This paper begins by noting how with the growing avaiable databases of music that new forms of querying them are needed and propose humming to be a natural way to query such a database. They then go on to describe how they are using melodic contour to identify each melody line. 
+	
+	They use three main components for their architecture, a pitch-tracking module, a melody database, and a query engine. The process of queryring the database would involve: humming into the microphone, which is then sent to a pitch-tracking module to be converted to a contour reresentation of the melody line, which is then compared against a database of MIDI songs. 
+	
+	The paper then goes on to describe the difficulties encountered when reading in pitch data. After discussing reading in the data, they went on to discuss how the tracked the pitch to get a melodic countour representation of the hummed melody using three different methods: 
+	\begin{itemize}
+		\item Autocorrelation: isolating and tracking the peak energy levels of the signal to measure the pitch.
+		\item Maximum Likelihood: A modification of autocorrelation to increase the accuracy of the pitch and decrease chances of aliasing (Picking an integer multiple of the actual pitch)
+		\item Cepstrum Analysis: The definitive classical method of pitch extraction, which they found didn't work well for tracking humming.
+	\end{itemize}	
+	They ended up using a modified form of autocorrelation for the project.
+	
+	For the query engine they used a fuzzy search string matching algorithm of the contour melody line of the input against the preprocessed contour lines of the songs in the database. 
+	
 	\section{References}
  	Müllensiefen, Daniel, and Klaus Frieler. “Evaluating Different Approaches to Measuring the Similarity of Melodies.” Studies in Classification, Data Analysis, and Knowledge Organization Data Science and Classification, pp. 299–306., doi:10.1007/3-540-34416-0\_32.
 	\\ \\
@@ -87,9 +102,8 @@
 	Cuddy, Lola L., Annabel J. Cohen, and Janet Miller. "Melody recognition: The experimental application of musical rules." Canadian Journal of Experimental Psychology 33 (1979): 148.
 	\\ \\
 	Miotto, Riccardo, and Nicola Orio. "Automatic identification of music works through audio matching." International Conference on Theory and Practice of Digital Libraries. Springer, Berlin, Heidelberg, 2007.
+	\\ \\
+	Ghias, Asif, et al. "Query by humming: musical information retrieval in an audio database." Proceedings of the third ACM international conference on Multimedia. ACM, 1995.
 	\\
-	LOOK INTO THIS----------------------------------------------------------------------\\
-	https://www.cs.cornell.edu/zeno/Papers/humming/humming.html\\
-	-----------------------------------------------------------------------
-	
+
 \end{document}
