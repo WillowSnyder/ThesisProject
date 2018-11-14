@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  12 NOV 2018 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  14 NOV 2018 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -86,63 +86,68 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Overfull \hbox (0.19531pt too wide) in paragraph at lines 33--55
+Overfull \hbox (0.19531pt too wide) in paragraph at lines 33--57
 \OT1/cmr/m/n/10 vol. 33, 1979, pp. 148. Pro-Quest, http://ezproxy.baylor.edu/lo
 gin?url=https:// 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--55
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--57
 
  []
 
@@ -160,7 +165,7 @@ ic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesisProposal.pdf (3 pages, 69488 bytes).
+Output written on thesisProposal.pdf (3 pages, 69778 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
