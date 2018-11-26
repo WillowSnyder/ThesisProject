@@ -14,9 +14,9 @@
 	varying structures to determine a list of possible melodies based off the one given.
 	
 	\section{Data}
-	The data used for this research is going to be primarily midi files of melodies either 
-	pre-existing or created during the course of the research. The use of midi files is primarily 
-	because they are already encoded so they are easier to input into the learning model. Additional 
+	The data used for this research is going to be primarily MIDI files of melodies either 
+	pre-existing or created during the course of the research. The use of MIDI files is primary 
+	because they are already encoded and are easier to input into the learning model. Additional 
 	data samples that may be used include live recordings of a melody being sung or played.
 	
 	\section{Features}
@@ -27,8 +27,8 @@
 		from one another and define the melodic line. 
 		
 		\item Rhythm: The rhythm, or relative length, of the notes in the melody is another primary way 
-		melodies are identified and although they are important to the identification of melodic lines
-		they do not hold as much importance as the intervals do so they will not be considered with as
+		melodies are identified. Although rhythm is important to the identification of melodic lines
+		it does not hold as much importance as the intervals do, and will not be given as
 		much weight in this thesis project.
 	\end{itemize} 
 	
@@ -39,22 +39,22 @@
 	Two main different structures of Hidden Markov Models will be explored. The first structure being 
 	where each melody has a single Hidden Markov Model representing it, where it can transition to any
 	part of the model from the start vertex and then from any other vertex transition to a special end 
-	vertex, thus allowing the melody to start and end at any part of the melody allowing for the new melody 
+	vertex. This allows the melody to start and end at any part of the melody and allows for the new melody 
 	to not need to be the full melody from start to end.
 	
 	The second main structure to be tested is each melody having several Hidden Markov Models representing 
 	it with each model representing an overlapping segment of the melody. So when a melody is tested, it would depend on 
 	the success of multiple Hidden Markov Models to identify the melody line.
 	
-	Each model has it's strengths and weaknesses the first one being better for longer continuous melodies but has the 
+	Each structure has it's strengths and weaknesses. The first structure is better for longer continuous melodies, but has the 
 	possibility of incorrectly starting at a different part of the melody line and being unable to correct itself.
 	While the second representation removes the problem of starting in the incorrect place it could perform worse in regards
 	to longer more continuous melody line samples.
 		
 	\section{Key Questions}
-	Key questions that will be explored during my research will include the following. How many notes are necessary 
-	to identify the song? What if there are mistakes in the performance of the melody? What if there isn't an close 
-	match for any melodies in that database? 
+	Key questions that will be explored during my research will include the following. Which structure of Hidden Markov Models
+	work best for different melody inputs?  How many notes are necessary to identify the song? What if there are mistakes in the 
+	performance of the melody? What if there isn't an close match for any melodies in that database? 
 	
 	\section{References}
 	Cuddy, Lola L., Annabel J. Cohen, and Janet Miller. "Melody Recognition: The Experimental Application of Musical Rules." 
